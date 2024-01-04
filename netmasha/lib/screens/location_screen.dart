@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:netmasha/widgets/maps.dart';
 import 'package:netmasha/styles/colors.dart';
 import 'package:netmasha/widgets/ActivityLocation.dart';
 
@@ -56,10 +57,12 @@ class LocationScreen extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 25),
                     child: Container(
+                      clipBehavior: Clip.antiAlias,
                       height: MediaQuery.of(context).size.height / 2.25,
                       decoration: BoxDecoration(
                           color: lightPurple,
                           borderRadius: BorderRadius.circular(15)),
+                      child: Maps(),
                     ),
                   ),
                 ),

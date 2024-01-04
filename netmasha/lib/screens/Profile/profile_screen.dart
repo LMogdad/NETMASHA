@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:netmasha/screens/Profile/edit_proflie.dart';
 import 'package:netmasha/screens/Profile/favorite_page.dart';
-import 'package:netmasha/screens/Profile/provider_info.dart';
+import 'package:netmasha/screens/provider/location.dart';
 import 'package:netmasha/screens/splash_screen.dart';
 import 'package:netmasha/styles/colors.dart';
 import 'package:netmasha/widgets/buttons.dart';
