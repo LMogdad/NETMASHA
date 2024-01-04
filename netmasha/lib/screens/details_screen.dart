@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:netmasha/models/experience_model.dart';
 import 'package:netmasha/screens/chat_screen.dart';
+import 'package:netmasha/screens/map_screen.dart';
 import 'package:netmasha/screens/payment_screen.dart';
 import 'package:netmasha/styles/colors.dart';
 import 'package:netmasha/widgets/buttons.dart';
@@ -64,10 +65,8 @@ class DetailsScreen extends StatelessWidget {
                         builder: (context) => const ChatScreen()));
               },
               location: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const ChatScreen()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const MapScreen()));
               },
               call: () {
                 Navigator.push(

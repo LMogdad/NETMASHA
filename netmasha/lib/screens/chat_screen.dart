@@ -13,7 +13,7 @@ class ChatScreen extends StatelessWidget {
         title: Row(
           children: [
             Text(
-              'تجربة قطف الفراولة',
+              "ركوب الخيل",
               style: TextStyle(color: bg),
             ),
           ],

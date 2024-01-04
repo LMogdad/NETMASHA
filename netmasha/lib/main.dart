@@ -9,7 +9,6 @@ import 'package:netmasha/blocs/table_bloc/table_bloc.dart';
 import 'package:netmasha/screens/nav_bar.dart';
 import 'package:netmasha/screens/splash_screen.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {

@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
@@ -11,7 +10,13 @@ class Maps extends StatelessWidget {
     const Marker(
         markerId: MarkerId("657578"), position: LatLng(24.863405, 46.712697)),
     const Marker(
-        markerId: MarkerId("667777"), position: LatLng(23.863401, 46.712699))
+      markerId: MarkerId("667777"),
+      position: LatLng(24.862476, 46.717598),
+    ),
+    const Marker(
+      markerId: MarkerId("99999"),
+      position: LatLng(24.855584, 46.711075),
+    )
   };
   @override
   Widget build(BuildContext context) {

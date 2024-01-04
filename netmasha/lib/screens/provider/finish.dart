@@ -52,7 +52,7 @@ class FinishPage extends StatelessWidget {
                       height: MediaQuery.of(context).size.height / 5,
                     ),
                     Text(
-                      "تم اكتمال نشر التجربة بنجاح  !!",
+                      "تم ارسال التجربة بنجاح  !!",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: black,
@@ -64,7 +64,7 @@ class FinishPage extends StatelessWidget {
                       height: 8,
                     ),
                     Text(
-                      " يمكنك الآن استقبال الحجوزات عبر خانة\n ادارة حجوزاتي",
+                      "سيتم مراجعة الطلب والرد عليكم قريباً",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: black,

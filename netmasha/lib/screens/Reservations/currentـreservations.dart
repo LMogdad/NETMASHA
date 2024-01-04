@@ -32,7 +32,7 @@ class CurrentReservations extends StatelessWidget {
                 if (snapshot.hasData) {
                   return ListView.builder(
                       shrinkWrap: true,
-                      itemCount: 2,
+                      itemCount: 1,
                       itemBuilder: (context, index) {
                         return EventsContainer(
                           experience: snapshot.data![index],
@@ -56,7 +56,10 @@ class CurrentReservations extends StatelessWidget {
                   //             ],
                   //           )));
                 }
-                return SizedBox(height: 150, child: Center(child: CircularProgressIndicator(color: purple)));
+                return SizedBox(
+                    height: 150,
+                    child: Center(
+                        child: CircularProgressIndicator(color: purple)));
               })
         ],
       ),

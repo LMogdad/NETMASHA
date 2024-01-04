@@ -40,8 +40,8 @@ class MessagesScreen extends StatelessWidget {
                     MaterialPageRoute(
                         builder: (context) => const ChatScreen()));
               },
-              name: 'صناعة الفخار',
-              time: '9:36 AM',
+              name: "ركوب الخيل",
+              time: '',
             ),
           ],
         ),

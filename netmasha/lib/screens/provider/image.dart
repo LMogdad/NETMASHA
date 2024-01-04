@@ -1,14 +1,23 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-
 import 'package:netmasha/screens/nav_bar.dart';
 import 'package:netmasha/screens/provider/finish.dart';
 import 'package:netmasha/styles/colors.dart';
 import 'package:netmasha/widgets/buttons.dart';
 import 'package:progresso/progresso.dart';
 
-class ProviderInfo3 extends StatelessWidget {
+class ProviderInfo3 extends StatefulWidget {
   ProviderInfo3({super.key});
+
+  @override
+  State<ProviderInfo3> createState() => _ProviderInfo3State();
+}
+
+class _ProviderInfo3State extends State<ProviderInfo3> {
+  File? imagefile;
+
   final ImagePicker picker = ImagePicker();
 
   @override
@@ -85,7 +94,7 @@ class ProviderInfo3 extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  " لحضات ويكون اعلانك جاهز  !!",
+                  " لحظات ويكون اعلانك جاهز  !!",
                   style: TextStyle(
                     color: black,
                     fontSize: 24,
@@ -108,18 +117,30 @@ class ProviderInfo3 extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
-                  child: Container(
-                    height: MediaQuery.of(context).size.height / 3,
-                    width: MediaQuery.of(context).size.width,
-                    decoration: BoxDecoration(
-                        color: lightPurple,
-                        borderRadius: BorderRadius.circular(15)),
-                    child: IconButton(
-                        onPressed: () async {
-                          await picker.pickImage(source: ImageSource.gallery);
-                        },
-                        icon: const Icon(Icons.camera_alt)),
-                  ),
+                  child: imagefile == null
+                      ? Container(
+                          height: MediaQuery.of(context).size.height / 3,
+                          width: MediaQuery.of(context).size.width,
+                          decoration: BoxDecoration(
+                              color: lightPurple,
+                              borderRadius: BorderRadius.circular(15)),
+                          child: IconButton(
+                              onPressed: () async {
+                                final XFile? image = await picker.pickImage(
+                                    source: ImageSource.gallery);
+                                if (image != null) {
+                                  imagefile = File(image.path);
+                                  setState(() {});
+                                }
+                              },
+                              icon: const Icon(Icons.camera_alt)),
+                        )
+                      : Container(
+                          height: MediaQuery.of(context).size.height / 3,
+                          width: MediaQuery.of(context).size.width,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15)),
+                          child: Image.file(imagefile!)),
                 ),
               ],
             ),
