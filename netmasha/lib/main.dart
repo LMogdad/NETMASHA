@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:netmasha/blocs/auth_bloc/auth_bloc.dart';
 import 'package:netmasha/blocs/date_bloc/date_bloc.dart';
 import 'package:netmasha/blocs/favorite_bloc/favorite_bloc.dart';
+import 'package:netmasha/blocs/nav_bar_bloc/nav_bar_bloc.dart';
 import 'package:netmasha/blocs/onbaording_bloc/onbaording_bloc.dart';
 import 'package:netmasha/blocs/table_bloc/table_bloc.dart';
 import 'package:netmasha/screens/nav_bar.dart';
@@ -38,7 +39,10 @@ class MainApp extends StatelessWidget {
           BlocProvider<TableBloc>(
               create: (BuildContext context) => TableBloc()),
           BlocProvider<DateBloc>(create: (BuildContext context) => DateBloc()),
-          BlocProvider<FavoriteBloc>(create: (BuildContext context) => FavoriteBloc()),
+          BlocProvider<FavoriteBloc>(
+              create: (BuildContext context) => FavoriteBloc()),
+          BlocProvider<NavBarBloc>(
+              create: (BuildContext context) => NavBarBloc()),
           // Add other BlocProviders if needed
         ],
         child: MaterialApp(
