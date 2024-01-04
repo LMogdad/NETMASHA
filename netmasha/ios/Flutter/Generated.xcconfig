@@ -1,14 +1,15 @@
 // This is a generated file; do not edit or check into version control.
-FLUTTER_ROOT=C:\flutter\flutter_windows_3.0.1-stable\flutter
-FLUTTER_APPLICATION_PATH=C:\Users\zezoo\OneDrive\Desktop\NETMASHA\netmasha
+FLUTTER_ROOT=/Users/reema/development/flutter
+FLUTTER_APPLICATION_PATH=/Users/reema/Documents/GitHub/NETMASHA/netmasha
 COCOAPODS_PARALLEL_CODE_SIGN=true
-FLUTTER_TARGET=lib\main.dart
+FLUTTER_TARGET=/Users/reema/Documents/GitHub/NETMASHA/netmasha/lib/main.dart
 FLUTTER_BUILD_DIR=build
 FLUTTER_BUILD_NAME=0.1.0
 FLUTTER_BUILD_NUMBER=0.1.0
-EXCLUDED_ARCHS[sdk=iphonesimulator*]=i386
+EXCLUDED_ARCHS[sdk=iphonesimulator*]=i386 arm64
 EXCLUDED_ARCHS[sdk=iphoneos*]=armv7
+DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ==,RkxVVFRFUl9XRUJfQ0FOVkFTS0lUX1VSTD1odHRwczovL3d3dy5nc3RhdGljLmNvbS9mbHV0dGVyLWNhbnZhc2tpdC8zZjNlNTYwMjM2NTM5YjdlMjcwMmY1YWM3OTBiMmE0NjkxYjMyZDQ5Lw==
 DART_OBFUSCATION=false
 TRACK_WIDGET_CREATION=true
 TREE_SHAKE_ICONS=false
-PACKAGE_CONFIG=.dart_tool/package_config.json
+PACKAGE_CONFIG=/Users/reema/Documents/GitHub/NETMASHA/netmasha/.dart_tool/package_config.json
